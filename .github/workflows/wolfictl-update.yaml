@@ -5,7 +5,7 @@ on:
     branches: ['main'] # todo switch this to CRON
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 jobs:
