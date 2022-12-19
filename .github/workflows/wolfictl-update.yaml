@@ -23,4 +23,4 @@ jobs:
         git config --global user.name "github-actions[bot]"
     - run: wolfictl update https://github.com/${{github.repository}} --data-mapper-url https://raw.githubusercontent.com/rawlingsj/wup-mapper/0a435fb7855afd64b7c7327faef49008e8f62592/Test.md
       env:
-        GITHUB_TOKEN: ${{github.token}}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
