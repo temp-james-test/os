@@ -5,16 +5,13 @@ on:
     branches: ['main'] # todo switch this to CRON
 
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
 
 jobs:
   lint:
     name: Wolfictl Update
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
 
     steps:
     - uses: wolfi-dev/wolfictl/.github/actions@main
