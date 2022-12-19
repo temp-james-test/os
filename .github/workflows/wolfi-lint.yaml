@@ -3,6 +3,10 @@ name: Wolfictl Lint
 on:
   pull_request:
     branches: ['main']
+  workflow_dispatch:
+    branches: ['main']
+  repository_dispatch:
+    branches: ['main']    
 jobs:
   lint:
     name: Wolfictl Lint
